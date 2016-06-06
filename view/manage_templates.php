@@ -58,6 +58,7 @@ $link = db_connect_local();
         
 
         $sql = "SELECT * FROM message_templates";
+        mysqli_set_charset($link, 'utf8mb4'); 
         $result = executeQuery($sql, $link);
         while($row = mysqli_fetch_assoc($result)) {
           $final_output[] = $row;
