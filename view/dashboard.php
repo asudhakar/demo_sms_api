@@ -19,17 +19,12 @@
 <body>
 <?php 
 
-  include_once '../app_functions/default_functions.php';
+  include_once '../app_functions/class_wise.php';
 
   if(array_key_exists("Class",$final_output)){
     unset($final_output['Class']);
   }
 
-
-
-print_r($final_output);
-
-  
  ?>
 <div class="container">
 
