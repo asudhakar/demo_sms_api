@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+  <title>Welcome</title>
 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style type="text/css">
 
   div>span{
-  	display: block;
+    display: block;
     font-size: 14px;
     margin-bottom: 9px;
   }
@@ -19,11 +19,17 @@
 <body>
 <?php 
 
-	include_once '../app_functions/class_wise.php';
-	if(array_key_exists("Customer Number",$final_output)){
-		unset($final_output['Customer Number']);
-	}
-	
+  include_once '../app_functions/default_functions.php';
+
+  if(array_key_exists("Class",$final_output)){
+    unset($final_output['Class']);
+  }
+
+
+
+
+
+  
  ?>
 <div class="container">
 
@@ -53,16 +59,16 @@
 
       $i = 1; 
       $totalhtml = "";
-      foreach ($final_output as $customer_number => $customer_mobile_number) {
-      	$html1 = $customer_number;
-      	foreach ($customer_mobile_number as $number_text => $number_and_names) {
-      		foreach ($number_and_names as $number => $names) {
-      			foreach ($names as $key => $name) {
-      				$html1 = $html1.'
+      foreach ($final_output as $class => $student_values) {
+        $html1 = '<label><input type="checkbox" class="checkthis"><p style="text-align: center;font-size: 27px;font-style: initial;">'.$class.'</p></label><br>';
+        foreach ($student_values as $number_text => $number_and_names) {
+          foreach ($number_and_names as $number => $names) {
+            foreach ($names as $key => $name) {
+              $html1 = $html1.'
   <label><input type="checkbox" name = "name[]" value="'.$number.'">'.$name.'('.$number.')</label><br>';
-      			}
-      		}$totalhtml = $totalhtml.'<div class="checkbox"><fieldset>'.$html1.'</fieldset></div><hr/>';
-      	}
+            }
+          }$totalhtml = $totalhtml.'<div class="checkbox"><fieldset>'.$html1.'</fieldset></div><hr/>';
+        }
       } 
 
       echo "$totalhtml";
