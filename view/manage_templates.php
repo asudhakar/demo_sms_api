@@ -25,9 +25,10 @@ $link = db_connect_local();
 <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="../index.php">Home</a></li>
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation" class="active"><a href="view/manage_templates.php">Templates</a></li>
             <li role="presentation"><a href="http://vefetch.com/">About</a></li>
-            <li role="presentation"><a href="login.php?action=logout">Logout</a></li>
+            <li role="presentation"><a href="view/login.php?action=logout">Logout</a></li>
           </ul>
         </nav>
         <img src="../images/company_logo.png" height="125px" width="220px">
