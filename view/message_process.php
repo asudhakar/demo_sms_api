@@ -44,6 +44,7 @@ function updateCount() {
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="../index.php">Home</a></li>
+            <li role="presentation"><a href="manage_templates.php">Templates</a></li>
             <li role="presentation"><a href="http://vefetch.com/">About</a></li>
             <li role="presentation"><a href="login.php?action=logout">Logout</a></li>
           </ul>
