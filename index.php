@@ -28,7 +28,7 @@
         <img src="images/company_logo.png" height="125px" width="220px">
       </div>
       <div class="jumbotron">
-        	<h2 style="font-family: -webkit-body;">Please Upload Your Excel File</h2>
+        	<h2 style="font-family: -webkit-body;">Please Upload Your Excel File[<a href="demo_files/student_list_demo.xlsx" download>demo</a>]</h2>
         	
         	<form action="upload.php" method="post" enctype="multipart/form-data">
           <div class="row">
