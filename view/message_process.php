@@ -60,7 +60,7 @@ function updateCount() {
     <h2>Enter the message</h2>
     </div>
     
-    <a href="manage_templates.php"><input type="button" class="btn btn-success" value="Manage Templates" style="margin-top: 17px; margin-left: 128px;"></a>
+   
    
   </div>
   <div class="jumbotron">
