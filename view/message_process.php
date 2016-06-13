@@ -40,6 +40,17 @@ function updateCount() {
 
 <body>
 <div class="container">
+<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="../index.php">Home</a></li>
+            <li role="presentation"><a href="http://vefetch.com/">About</a></li>
+            <li role="presentation"><a href="login.php?action=logout">Logout</a></li>
+          </ul>
+        </nav>
+        <img src="../images/company_logo.png" height="125px" width="220px">
+      </div>
+      <hr/>
 <form action="insert_into_db.php" method="post">
 	<input type="hidden" name="name_and_number" value="<?php echo $name_and_number; ?>">
   <input type="hidden" name="path" value="<?php echo $path; ?>">
