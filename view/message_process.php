@@ -67,7 +67,7 @@ function updateCount() {
   <?php 
 
     foreach ($names as $key => $name) {
-      echo '<span style="background-color: aqua;">'.$name.'</span>';
+      echo '<span style="background-color: aqua;">('.$name.')</span>';
     }
 
    ?>
