@@ -8,7 +8,7 @@ $name_and_numbers = unserialize(base64_decode($name_and_numbers));
 $path = $_POST['path'];
 $link = db_connect();
 
-
+print_r($name_and_numbers);
 print_r(strpos($message, '$name'));
 
 // foreach ($name_and_numbers as $key => $number) {
