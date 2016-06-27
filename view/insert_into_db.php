@@ -9,15 +9,15 @@ $path = $_POST['path'];
 $link = db_connect();
 
 print_r($name_and_numbers);
-print_r(strpos($message, '$name'));
+
 
 
 
 foreach ($name_and_numbers as $key => $namenumbers) {
-	$namenumber = explode(",", $namenumbers);
-	print_r($namenumber);
-	// $final = str_replace("#name","$namenumber","#name");
-	// echo "$final";
+	// $namenumber = explode(",", $namenumbers);
+	// print_r($namenumber);
+	$final = str_replace("#name","$namenumbers","your son/daughter #name is today absent");
+	echo "$final";
 }
 
 
