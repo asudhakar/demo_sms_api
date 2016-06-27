@@ -1,8 +1,8 @@
 <?php 
 include('../controllers/function.php');
-$name_and_number = $_POST['name'];
+$names = $_POST['name'];
 $path = $_POST['path'];
-$name_and_number = base64_encode(serialize($name_and_number));
+$name_and_number = base64_encode(serialize($names));
 
 
 ?>
@@ -66,7 +66,9 @@ function updateCount() {
   <div class="jumbotron">
   <?php 
 
-    print_r($name_and_number);
+    foreach ($names as $key => $name) {
+      echo "<p>$name</p>";
+    }
 
    ?>
   </div>
