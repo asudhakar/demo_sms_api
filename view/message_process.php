@@ -66,9 +66,7 @@ function updateCount() {
   <div class="jumbotron">
   <?php 
 
-    foreach ($name_and_number as $key => $name) {
-      echo "<p>$name</p>";
-    }
+    print_r($name_and_number);
 
    ?>
   </div>
