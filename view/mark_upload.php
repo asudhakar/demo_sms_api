@@ -30,5 +30,9 @@
 	    <hr/>
 
 	</div>
+	<footer class="footer">
+
+         <p style="text-align: center">All rights are reserved by <a href="http://vefetch.com/">Vefetch</a>, Developed by <a href="https://twitter.com/sudhakar_valar">@sudhakar</a>.</p>
+      </footer>
 </body>
 </html>
