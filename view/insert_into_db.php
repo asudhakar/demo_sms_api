@@ -13,9 +13,11 @@ print_r(strpos($message, '$name'));
 
 
 
-foreach ($name_and_numbers as $key => $namenumber) {
-	$final = str_replace("#name","$namenumber","#name");
-	echo "$final";
+foreach ($name_and_numbers as $key => $namenumbers) {
+	$namenumber = explode(",", $namenumbers);
+	print_r($namenumber);
+	// $final = str_replace("#name","$namenumber","#name");
+	// echo "$final";
 }
 
 
