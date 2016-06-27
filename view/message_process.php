@@ -57,7 +57,7 @@ function updateCount() {
   <input type="hidden" name="path" value="<?php echo $path; ?>">
   <div class="row">
     <div class="col-sm-9">
-    <h2>Enter the message</h2>
+    <h2>Selected Contacts</h2>
     </div>
     
    
@@ -71,6 +71,14 @@ function updateCount() {
     }
 
    ?>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+    <h2>Enter the message</h2>
+    </div>
+    
+   
+   
   </div>
   <div class="jumbotron">
     <div class="row">
