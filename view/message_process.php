@@ -67,7 +67,7 @@ function updateCount() {
   <?php 
 
     foreach ($names as $key => $name) {
-      echo "<p>$name</p>";
+      echo "<span>$name</span>";
     }
 
    ?>
