@@ -1,7 +1,6 @@
 <?php 
 include('../controllers/function.php');
 $name_and_number = $_POST['name'];
-print_r($name_and_number);
 $path = $_POST['path'];
 $name_and_number = base64_encode(serialize($name_and_number));
 
@@ -63,6 +62,15 @@ function updateCount() {
     
    
    
+  </div>
+  <div class="jumbotron">
+  <?php 
+
+    foreach ($name_and_number as $key => $name) {
+      echo "<p>$name</p>";
+    }
+
+   ?>
   </div>
   <div class="jumbotron">
     <div class="row">
