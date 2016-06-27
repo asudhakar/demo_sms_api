@@ -11,6 +11,15 @@ $link = db_connect();
 print_r($name_and_numbers);
 print_r(strpos($message, '$name'));
 
+
+
+foreach ($name_and_numbers as $key => $namenumber) {
+	$final = str_replace("#name","$namenumber","#name");
+	echo "$final";
+}
+
+
+
 // foreach ($name_and_numbers as $key => $number) {
 // 	$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$number', '$message')";
 // 	mysqli_set_charset($link, 'utf8mb4'); 
