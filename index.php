@@ -20,6 +20,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="view/mark_upload.php">Mark Upload</a></li>
             <li role="presentation"><a href="view/manage_templates.php">Templates</a></li>
             <li role="presentation"><a href="http://vefetch.com/">About</a></li>
             <li role="presentation"><a href="view/login.php?action=logout">Logout</a></li>
