@@ -16,7 +16,7 @@ print_r($name_and_numbers);
 foreach ($name_and_numbers as $key => $namenumbers) {
 	$namenumber = explode(",", $namenumbers);
 	print_r($namenumber);
-	$final = str_replace("#name","$namenumber[0]","your son/daughter #name is today absent");
+	$final = str_replace("#name","$namenumber[0]","$message");
 	$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$namenumber[1]', '$final')";
 	echo "$sql";
 	
