@@ -1,6 +1,6 @@
 <?php 
 	print_r($_FILES);
-	$target_dir = "../files/";
+	$target_dir = "../temp/";
 	$target_file = $target_dir . basename($_FILES["markUpload"]["name"]);
 	$uploadOk = 1;
 	if (file_exists($target_file)) {
@@ -22,6 +22,7 @@
 
 
 	function default_message_process($target_file){
+		echo "$target_file";
 		require('../php-excel-reader/excel_reader2.php');
 		require('../SpreadsheetReader.php');
 		echo "$target_file<br/><pre>";
