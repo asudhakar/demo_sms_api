@@ -1,5 +1,7 @@
 <?php 
 include_once '../controllers/function.php';
+require('../php-excel-reader/excel_reader2.php');
+require('../SpreadsheetReader.php');
 $target_dir = "../temp/";
 $target_file = $target_dir . basename($_FILES["markUpload"]["name"]);
 $uploadOk = 1;
@@ -19,3 +21,8 @@ if ($uploadOk == 0) {
     	echo "Error in inserting";
     }
 }
+
+
+$Reader = new SpreadsheetReader($target_file);
+
+print_r($Reader);
