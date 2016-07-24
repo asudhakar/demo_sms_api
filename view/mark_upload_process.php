@@ -36,7 +36,7 @@
 				$i++;
 				continue;
 			} else{
-				$message_content = "Your Son/Daughter ".$Row['1']."Scored Tam-I :- ".$Row['2'].", Tam-II :-".$Row['3']."Tamil Total :-".$Row['4']."Eng-I :-".$Row['5']."Eng-II :-".$Row['6']."Total English :-".$Row['7']."Phy :-".$Row['8']."Che :-".$Row['9']."Bio/CS :-".$Row['10']."Mat :-".$Row['11']."Total :-".$Row['12']."Rank of your Son/Daughter is".$Row['13'];
+				$message_content = "Your Son/Daughter ".$Row['1']."Scored Tam-I :- ".$Row['2'].", Tam-II :- ".$Row['3'].", Tamil Total :- ".$Row['4'].", Eng-I :- ".$Row['5'].", Eng-II :- ".$Row['6'].", Total English :- ".$Row['7'].", Phy :- ".$Row['8'].", Che :- ".$Row['9'].", Bio/CS :- ".$Row['10'].", Mat :- ".$Row['11'].", Total :- ".$Row['12'].", Rank of your Son/Daughter is ".$Row['13'].".";
 				$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$Row[14]', '$message_content')";
 				echo "$sql";
 				// mysqli_set_charset($link, 'utf8mb4'); 
