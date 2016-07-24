@@ -28,10 +28,14 @@
 			<img src="../images/company_logo.png" height="125px" width="220px">
 		</div>
 	    <hr/>
+	    <form action="upload.php" method="post" enctype="multipart/form-data">
+	    <input type="file" class="form-control" name="markUpload" required>
+	    <input type="submit" class="btn btn-info" style="font-size: 13px;"value="Upload File" name="submit">
+	    </form>
 
 	</div>
 
-	<input type="file" class="form-control" name="fileToUpload" id="fileToUpload" required>
+
 	<footer class="footer">
 
          <p style="text-align: center">All rights are reserved by <a href="http://vefetch.com/">Vefetch</a>, Developed by <a href="https://twitter.com/sudhakar_valar">@sudhakar</a>.</p>
