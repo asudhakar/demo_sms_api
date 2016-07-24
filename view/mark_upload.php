@@ -28,7 +28,7 @@
 			<img src="../images/company_logo.png" height="125px" width="220px">
 		</div>
 	    <hr/>
-	    <form action="upload.php" method="post" enctype="multipart/form-data">
+	    <form action="mark_upload_process.php" method="post" enctype="multipart/form-data">
 	    <input type="file" class="form-control" name="markUpload" required>
 	    <p style="text-align:center">
 	    <input type="submit" class="btn btn-info" style="font-size: 13px;"value="Upload File" name="submit">
