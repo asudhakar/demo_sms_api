@@ -26,5 +26,7 @@
 		require('../SpreadsheetReader.php');
 		echo "$target_file<br/><pre>";
 		$Reader = new SpreadsheetReader($target_file);
-		print_r($Reader);
+		foreach ($Reader as $Row) {
+			print_r($Row);
+		}
 	}
