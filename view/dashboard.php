@@ -26,7 +26,7 @@
   }
 
  ?>
-<div class="container">
+<!-- <div class="container">
 
 <div class="header clearfix">
         <nav>
@@ -98,7 +98,7 @@ $('body').on('change', '#checkAll', function(){
     });
 
 </script>
-
+ -->
 
 
 </body>
