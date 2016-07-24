@@ -1,5 +1,5 @@
 <?php 
-
+	print_r($_FILES);
 	$target_dir = "../files/";
 	$target_file = $target_dir . basename($_FILES["markUpload"]["name"]);
 	$uploadOk = 1;
@@ -21,10 +21,10 @@
 	}
 
 
-	function default_message_process($target_file){
-		require('../php-excel-reader/excel_reader2.php');
-		require('../SpreadsheetReader.php');
-		echo "$target_file<br/><pre>";
-		$Reader = new SpreadsheetReader($target_file);
-		print_r($Reader);
-	}
+	// function default_message_process($target_file){
+	// 	require('../php-excel-reader/excel_reader2.php');
+	// 	require('../SpreadsheetReader.php');
+	// 	echo "$target_file<br/><pre>";
+	// 	$Reader = new SpreadsheetReader($target_file);
+	// 	print_r($Reader);
+	// }
