@@ -30,7 +30,9 @@
 	    <hr/>
 	    <form action="upload.php" method="post" enctype="multipart/form-data">
 	    <input type="file" class="form-control" name="markUpload" required>
+	    <p style="text-align:center">
 	    <input type="submit" class="btn btn-info" style="font-size: 13px;"value="Upload File" name="submit">
+	    </p>
 	    </form>
 
 	</div>
