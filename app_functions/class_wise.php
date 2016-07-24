@@ -8,9 +8,10 @@
     $Reader = new SpreadsheetReader($file_path);
     print_r($Reader);
     foreach ($Reader as $Row)
-    {
-    	$final_output[$Row[0]]['number'][$Row[2]][] = $Row[1];
-    	//$final_output["class"][number][9842972047][] = name;
+    {	
+    	print_r($Row);
+    	// $final_output[$Row[0]]['number'][$Row[2]][] = $Row[1];
+    	// //$final_output["class"][number][9842972047][] = name;
     }
 
     
