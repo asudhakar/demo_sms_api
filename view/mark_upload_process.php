@@ -1,12 +1,12 @@
 <?php 
-include_once 'controllers/function.php';
+include_once '../controllers/function.php';
 $target_dir = "../temp/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 if (file_exists($target_file)) {
     $uploadOk = 0;
 }
-
+echo $target_file;
 if ($_FILES["fileToUpload"]["size"] > 500000) {
     $uploadOk = 0;
 }
