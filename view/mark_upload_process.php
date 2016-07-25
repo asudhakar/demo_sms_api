@@ -47,13 +47,14 @@
 	}
 
 	function db_connect(){
-		$connection = mysqli_connect('103.207.0.76', "demo", "demo1234", "demo", 3306);
-		if (!$connection) {
-		    die("Connection failed: " . mysqli_connect_error());
-		    exit();
-		}
-		return $connection;
-	}
+                $connection = mysqli_connect('103.207.0.76', "vani", "vani1234", "vani", 3306);
+                if (!$connection) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    exit();
+                }
+                return $connection;
+    }
+
 
 	function delete_target_file($path){
 		if (!unlink($path))
