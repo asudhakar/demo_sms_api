@@ -40,8 +40,8 @@
 
 				$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$Row[14]', '$message_content')";
 				echo $sql;
-				// mysqli_set_charset($link, 'utf8mb4'); 
-				// executeQuery($sql, $link);
+				mysqli_set_charset($link, 'utf8mb4'); 
+				executeQuery($sql, $link);
 			}
 		}
 	}
