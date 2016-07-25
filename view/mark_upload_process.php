@@ -25,7 +25,7 @@
 
 
 	function default_message_process($target_file){
-		$link = db_connect();
+		// $link = db_connect();
 		require('../php-excel-reader/excel_reader2.php');
 		require('../SpreadsheetReader.php');
 		echo "$target_file<br/><pre>";
