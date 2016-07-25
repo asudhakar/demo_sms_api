@@ -29,6 +29,9 @@
 		</div>
 	    <hr/>
 	    <form action="mark_upload_process.php" method="post" enctype="multipart/form-data">
+	    <input type="textbox" class="form-control" name="name_of_exam" placeholder="Name of the Exam" required>
+	    <input type="textbox" class="form-control" name="class" placeholder="Class" required>
+	    <input type="textbox" class="form-control" name="section" placeholder="Section" required>
 	    <input type="file" class="form-control" name="markUpload" required>
 	    <p style="text-align:center">
 	    <input type="submit" class="btn btn-info" style="font-size: 13px;"value="Upload File" name="submit">
