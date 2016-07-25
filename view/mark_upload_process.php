@@ -34,7 +34,7 @@
 				$i++;
 				continue;
 			} else{
-				$message_content = "Name of the exam :- ".$_POST['name_of_exam']." Class :- ".$_POST['class']." Section :- ".$_POST['section']." ".$Row['1']." Scored Tam-I :- ".$Row['2'].", Tam-II :- ".$Row['3'].", Tamil Total :- ".$Row['4'].", Eng-I :- ".$Row['5'].", Eng-II :- ".$Row['6'].", Total English :- ".$Row['7'].", Phy :- ".$Row['8'].", Che :- ".$Row['9'].", Bio/CS :- ".$Row['10'].", Mat :- ".$Row['11'].", Total :- ".$Row['12'];
+				$message_content = "Name of the exam :- ".$_POST['name_of_exam'].", Class :- ".$_POST['class'].", Section :- ".$_POST['section'].", ".$Row['1']." Scored Tam-I :- ".$Row['2'].", Tam-II :- ".$Row['3'].", Tamil Total :- ".$Row['4'].", Eng-I :- ".$Row['5'].", Eng-II :- ".$Row['6'].", Total English :- ".$Row['7'].", Phy :- ".$Row['8'].", Che :- ".$Row['9'].", Bio/CS :- ".$Row['10'].", Mat :- ".$Row['11'].", Total :- ".$Row['12'];
 				$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$Row[14]', '$message_content')";
 				// print_r($_POST);
 				echo "$sql";
