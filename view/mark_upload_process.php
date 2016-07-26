@@ -17,7 +17,7 @@
 	    if (move_uploaded_file($_FILES["markUpload"]["tmp_name"], $target_file)) {
 	    	default_message_process($target_file);
 	    	delete_target_file($target_file);
-	    	// header("Location: mark_upload.php");
+	    	header("Location: mark_upload.php");
 	    } else {
 	    	echo "Error in inserting";
 	    }
