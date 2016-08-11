@@ -37,9 +37,9 @@
 				$i++;
 				continue;
 			} else{
-				$message_content = "Name of the exam :- ".$_POST['name_of_exam'].", Class :- ".$_POST['class'].", Section :- ".$_POST['section'].", ".$Row['1']." Scored Tamil :- ".$Row['2'].", English :- ".$Row['3'].", Physics :- ".$Row['4'].", Chemistry :- ".$Row['5'].", Bio/CS :- ".$Row['6'].", Mat :- ".$Row['7'].", Total :- ".$Row['8'].", Result :- ".$Row['9'];
+				$message_content = "Name of the exam :- ".$_POST['name_of_exam'].", Class :- ".$_POST['class'].", Section :- ".$_POST['section'].", ".$Row['1']." Scored Tamil :- ".$Row['2'].", English :- ".$Row['3'].", Maths :- ".$Row['4'].", Science :- ".$Row['5'].", Social :- ".$Row['6'].", Total :- ".$Row['7'].", Result :- ".$Row['8'];
 
-				$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$Row[10]', '$message_content')";
+				$sql = "INSERT INTO `MessageOut` (`MessageTo` , `MessageText`) VALUES ('$Row[9]', '$message_content')";
 				echo $sql;
 				// mysqli_set_charset($link, 'utf8mb4'); 
 				// executeQuery($sql, $link);
