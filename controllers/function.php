@@ -42,7 +42,7 @@
 	function isValidateUser($username, $password){
 		realEscape($username);
 		realEscape($password);
-		if($username == "vanividyalaya" && $password == "vani1234"){
+		if($username == "vidyasaagar" && $password == "vidyasaagar"){
 			return createSession($username);
 		}else{
 			return false;
@@ -59,7 +59,7 @@
 		return mysqli_query($link, $query);
 	}
 	function db_connect_local(){
-		$connection = mysqli_connect('localhost', "root", "palaniM@67", "vani");
+		$connection = mysqli_connect('localhost', "root", "palaniM@67", "vidyasaagar");
 			if (!$connection) {
 			    die("Connection failed: " . mysqli_connect_error());
 			    exit();

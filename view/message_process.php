@@ -52,7 +52,7 @@ function updateCount() {
         <img src="../images/company_logo.png" height="125px" width="220px">
       </div>
       <hr/>
-<form action="insert_into_db.php" method="post">
+<form method="post" id="main_form">
 	<input type="hidden" name="name_and_number" value="<?php echo $name_and_number; ?>">
   <input type="hidden" name="path" value="<?php echo $path; ?>">
   <div class="row">
@@ -105,7 +105,8 @@ function updateCount() {
     </div>
   </div>
 <span id="characters"><span></span></span>
-<input type="submit" class="btn btn-primary" value="send">
+  <input type="button" class="btn btn-primary" id="send_sms_in_english" value="send in english">   
+<input type="button" class="btn btn-primary" id="send_sms_in_tamil" value="send in tamil">
 <a href="../index.php"><input type="button" class="btn btn-warning" value="cancel"></a>
 </form>
 	
@@ -122,6 +123,16 @@ function updateCount() {
       $('.message-box').html(value);
     });
     
+      $("#send_sms_in_english").click(function(){   
+                 console.log("clicked");    
+                $("#main_form").attr("action", "insert_into_db.php");   
+                $("#main_form").submit();   
+        });   
+        $("#send_sms_in_tamil").click(function(){   
+                 console.log("clicked");    
+                 $("#main_form").attr("action", "insert_into_tamil_db.php");    
+                $("#main_form").submit();   
+        });
 
 
 </script>
